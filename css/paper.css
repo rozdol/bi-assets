@@ -1,0 +1,118 @@
+@page { margin: 0 }
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font: 12pt "Tahoma";
+ }
+.sheet {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/** Paper sizes **/
+body.A3               .sheet { width: 297mm; height: 419mm }
+body.A3.landscape     .sheet { width: 420mm; height: 296mm }
+body.A4               .sheet { width: 210mm; height: 296mm }
+body.A4.landscape     .sheet { width: 297mm; height: 209mm }
+body.A5               .sheet { width: 148mm; height: 209mm }
+body.A5.landscape     .sheet { width: 210mm; height: 147mm }
+body.letter           .sheet { width: 216mm; height: 279mm }
+body.letter.landscape .sheet { width: 280mm; height: 215mm }
+body.legal            .sheet { width: 216mm; height: 356mm }
+body.legal.landscape  .sheet { width: 357mm; height: 215mm }
+
+/** Padding area **/
+.sheet.padding-10mm { padding: 10mm }
+.sheet.padding-15mm { padding: 15mm }
+.sheet.padding-20mm { padding: 20mm }
+.sheet.padding-25mm { padding: 25mm }
+
+/** For screen preview **/
+@media screen {
+  body { background: #e0e0e0 }
+  .sheet {
+    background: white;
+    box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+    margin: 5mm auto;
+  }
+}
+
+/** Fix for Chrome issue #273306 **/
+@media print {
+           body.A3.landscape { width: 420mm }
+  body.A3, body.A4.landscape { width: 297mm }
+  body.A4, body.A5.landscape { width: 210mm }
+  body.A5                    { width: 148mm }
+  body.letter, body.legal    { width: 216mm }
+  body.letter.landscape      { width: 280mm }
+  body.legal.landscape       { width: 357mm }
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.chapter, .appendix {
+  page-break-after: always;
+}
+
+body   { font-family: sans-serif; font-size: 9pt; }
+h1     { font-size: 24pt;}
+h2     { font-size: 20pt;}
+h3     { font-size: 18pt;}
+h4     { font-size: 16pt;}
+h5     { font-size: 14pt;}
+h2 + p { font-size: 14pt;}
+h3 + p { font-size: 12pt;}
+
+li     { font-size: 10pt; line-height: 5mm }
+h1      { margin: 0 }
+
+h1, h2, h3, h4, h5  { margin: 0 3mm 3mm 0;}
+
+.money      { margin: 2mm 0 0 50mm; border-bottom: 2px solid black }
+.money + ul { margin: 5mm 0 0 50mm }
+
+.label     {float: left  }
+.label + .value {margin: 0 0 3mm 20mm }
+.rouded-double-porder { border: 4px double black; padding: 1mm 1mm; border-radius: 3mm; background-color: white; }
+.border-right {border-right: 1px double black;}
+.n {text-align: right;}
+.head {font-weight: bold; background-color: #eee;}
+.total {font-weight: bold; border-bottom:double black 3px;  border-top:solid black 1px;}
+.center{text-align: center;}
+.acenter{align: center;}
+.border-bottom {border-bottom:solid black 1px;}
+.white{color:white;}
+.bold {font-weight: bold;}
+td { vertical-align: text-top;}
+pre {
+  font-size: 5pt;
+  line-height: 5pt;
+}
+.letterhead{
+  position:absolute;
+  right:0px;
+  top  :0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 4.5cm;
+  width:100%;
+}
+
+.letterfooter {
+  position: absolute;
+  right:0px;
+  bottom: -1.7cm;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 4.5cm;
+}

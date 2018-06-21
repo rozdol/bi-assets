@@ -1,0 +1,19 @@
+{
+    "name": "rozdol/bi-assets",
+    "description": "Test assets",
+    "type": "vanilla-theme",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:rozdol/bi-assets.git"
+        }
+    ],
+    "extra": {
+        "installer-name": "assets"
+    },
+    "require": {
+        "php": ">=5.3",
+        "composer/installers": "^1.1"
+    }
+}
