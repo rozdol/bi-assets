@@ -307,6 +307,7 @@ h3{
 .s, .table-striped-tr tbody tr.s:nth-child(odd){background: #dddddd; font-weight: 900; color: #000000;}
 .h, .table-striped-tr tbody tr.h:nth-child(odd){background: #cccccc; color: #000000;}
 td.n, th.n {text-align: right; white-space:nowrap;}
+td.center, th.center {text-align: center; white-space:nowrap;}
 td.b, th.b {font-weight:bold;}
 .rowheader, .table-striped-tr tbody tr.rowheader:nth-child(odd), .table th.rowheader, .table td.rowheader { 
 	font-weight:bold; 
