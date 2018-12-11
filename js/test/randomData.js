@@ -99,7 +99,6 @@
 
 			for (var i = 0; i < laneCount; i++) {
 				var dt = new Date(2012, startMonth, startDay);
-				console.log(dt);
 				for (var j = 0; j < totalWorkItems; j++) {
 					
 					var dtS = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate() + randomNumber(1,5), randomNumber(8, 16), 0, 0);
