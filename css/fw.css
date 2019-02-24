@@ -817,8 +817,9 @@ input[type="checkbox"] {
   background: #fff;
   box-shadow: 0 3px 5px rgba(0,0,0,0.3);
   float: left;
+  /*float: none;*/
 
-  //padding: 1px 8px;
+  /*padding: 1px 8px;*/
 }
 .collapse-header > *:first-of-type, .collapsable > *:first-of-type{
   margin-top:0px;
