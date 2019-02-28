@@ -29,3 +29,16 @@ function leavecomment(link,text) {
 	}
 }
 
+function savevalue(link,text) {
+	if(text=='')text="Enter Value";
+	var answer=prompt(text,"");
+	if (answer!=''&&answer!=null){
+		link=link+"&value="+answer;
+		//alert("Done!"+link);
+		window.location = link;
+	}
+	else{
+		alert("Can not save  \n Try again");
+	}
+}
+
