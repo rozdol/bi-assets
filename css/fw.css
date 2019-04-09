@@ -306,6 +306,7 @@ h3{
 .x, .table-striped-tr tbody tr.x:nth-child(odd){background: #ff0000; font-weight: 900; color: #ffffff;}
 .s, .table-striped-tr tbody tr.s:nth-child(odd){background: #dddddd; font-weight: 900; color: #000000;}
 .h, .table-striped-tr tbody tr.h:nth-child(odd){background: #cccccc; color: #000000;}
+.left {text-align: left; align:left;}
 td.n, th.n {text-align: right; white-space:nowrap;}
 td.center, th.center {text-align: center; white-space:nowrap;}
 td.b, th.b {font-weight:bold;}
