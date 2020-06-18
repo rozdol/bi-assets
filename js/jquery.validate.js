@@ -283,7 +283,7 @@ $.extend($.validator, {
 		remote: "Please fix this field.",
 		email: "Please enter a valid email address.",
 		url: "Please enter a valid URL.",
-		date: "Please enter a valid date.",
+		date: "Please enter a valid date DD.MM.YYYY",
 		dateISO: "Please enter a valid date (ISO).",
 		number: "Please enter a valid number.",
 		digits: "Please enter only digits.",
@@ -1023,7 +1023,9 @@ $.extend($.validator, {
 
 		// http://docs.jquery.com/Plugins/Validation/Methods/date
 		date: function( value, element ) {
-			return this.optional(element) || !/Invalid|NaN/.test(new Date(value).toString());
+			//return this.optional(element) || !/Invalid|NaN/.test(new Date(value).toString());
+			return this.optional(element) || /^(0?[1-9]|[12][0-9]|3[01])[\.](0?[1-9]|1[012])[\.]\d{4}$/.test(value);
+			//return true;
 		},
 
 		// http://docs.jquery.com/Plugins/Validation/Methods/dateISO
