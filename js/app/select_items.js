@@ -132,14 +132,14 @@ function reload_controls(){
       var parts = id.toString().split(":");
       var icon_id='icons:'+parts[1];
       //alert(icon_id);
-      $('.row-editable-icons[id="'+icon_id+'"]').slideDown('fast');
+      $('.row-editable-icons[id="'+icon_id+'"]').show();
       //$(".row-editable-icons").show();
   },function(){
     var id = $(this).attr('id');
       var parts = id.toString().split(":");
       var icon_id='icons:'+parts[1];
       //alert(icon_id);
-      $('.row-editable-icons[id="'+icon_id+'"]').slideUp('slow');
+      $('.row-editable-icons[id="'+icon_id+'"]').hide();
   });
 
   $(".edit-icon").hover(function(){
