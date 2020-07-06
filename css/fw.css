@@ -875,13 +875,14 @@ input.hidden {
 
 .row-editable-icons{ /*CSS for pop up hint box */
   position:absolute;
-  //top: 0;
-  //font:normal 10px Verdana;
-  //line-height:13px;
-  //z-index:1000;
-  //visibility: hidden;
-  max-width: 60px;
-  padding: 0px 8px;
+  /*top: 0;*/
+  /*font:normal 10px Verdana;*/
+  /*line-height:6px;*/
+  /*z-index:1000;*/
+  /*visibility: hidden;*/
+  /*max-width: 200px;*/
+  /*padding: 10px 18px 20px 38px;*/
+
   color: #ffffff;
   text-align: left;
   text-decoration: none;
