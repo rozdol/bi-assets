@@ -28,8 +28,8 @@ function ajaxFunction(DivId,GetURL){
 		}
 	}
     var ajaxDisplay = document.getElementById(DivId);
-    ajaxDisplay.innerHTML = "<img src='/assets/img/ajax-loader-bar.gif'>";
-		//ajaxDisplay.innerHTML = "loading...";
+    //ajaxDisplay.innerHTML = "<img src='/assets/img/ajax-loader-bar.gif'>";
+	ajaxDisplay.innerHTML = "loading...";
 
 	ajaxRequest.open("GET", GetURL, true);
 	ajaxRequest.send(null); 
