@@ -61,6 +61,23 @@ function showhint(menucontents, obj, e, tipwidth){
 	}
 }
 
+function showhint_left(menucontents, obj, e, tipwidth){
+	if ((ie||ns6) && document.getElementById("hintbox")){
+		dropmenuobj=document.getElementById("hintbox")
+		dropmenuobj.innerHTML=menucontents
+		dropmenuobj.style.right=dropmenuobj.style.top=-500
+		if (tipwidth!=""){
+			dropmenuobj.widthobj=dropmenuobj.style
+			dropmenuobj.widthobj.width=tipwidth
+		}
+		dropmenuobj.x=getposOffset(obj, "left")
+		dropmenuobj.y=getposOffset(obj, "top")
+		dropmenuobj.style.left=dropmenuobj.x+"px"
+		dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+		dropmenuobj.style.visibility="visible"
+		obj.onmouseout=hidetip
+	}
+}
 function hidetip(e){
 	dropmenuobj.style.visibility="hidden"
 	dropmenuobj.style.left="-500px"
