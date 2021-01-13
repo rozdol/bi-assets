@@ -2,6 +2,11 @@ table {
     max-width: none;
 }
 
+@media print {
+    a[href]::after {
+        content: none !important;
+    }
+}
 .form-signin {
   max-width: 300px;
   padding: 19px 29px 29px;
