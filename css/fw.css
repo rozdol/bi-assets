@@ -925,16 +925,36 @@ input.hidden {
     background: linear-gradient(45deg,#4099ff,#73b4ff);
 }
 
-.bg-c-green {
+.bg-c-navy {
+    background: linear-gradient(45deg,#1542AB,#2556C8);
+}
+
+.bg-c-lime {
     background: linear-gradient(45deg,#2ed8b6,#59e0c5);
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg,#00A521,#13D93A);
 }
 
 .bg-c-yellow {
     background: linear-gradient(45deg,#FFB64D,#ffcb80);
 }
 
+.bg-c-orange {
+    background: linear-gradient(45deg,#F77D52,#FFA180);
+}
+
 .bg-c-pink {
     background: linear-gradient(45deg,#FF5370,#ff869a);
+}
+
+.bg-c-red {
+    background: linear-gradient(45deg,#B50003,#F4171A);
+}
+
+.bg-c-grey {
+    background: linear-gradient(45deg,#959393,#AFADAD);
 }
 
 
@@ -946,6 +966,15 @@ input.hidden {
     margin-bottom: 30px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card a:hover {
+    color: #000;
 }
 
 .card .card-block {
