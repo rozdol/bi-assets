@@ -1010,6 +1010,11 @@ input.hidden {
     text-align: left !important;
 }
 
+@media print {
+    a[href]::after {
+        content: none !important;
+    }
+}
 /*@-webkit-keyframes fadeOut {
   0% {opacity: 0;}
   10% {opacity: 1;}
